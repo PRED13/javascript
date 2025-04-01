@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "pokedex.js": "^4.3.0"
+  }
+}
