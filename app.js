@@ -1,21 +1,16 @@
-const express = require('express');
-const app = express();
-const PORT = 3000;
+function MyButton() {
+  return (
+    <button>
+      I'm a button
+    </button>
+  );
+}
 
-app.use(express.json());
-
-app.get('/', (req, res) => {
-  res.send('¡Hola, mundo!');
-});
-
-app.post('/api/data', (req, res) => {
-  const data = req.body;
-  res.json({
-    message: 'Datos recibidos',
-    data: data
-  });
-});
-
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
-});
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Welcome to my app</h1>
+      <MyButton />
+    </div>
+  );
+}
