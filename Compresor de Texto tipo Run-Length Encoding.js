@@ -1,6 +1,5 @@
 function runLengthEncode(texto) {
   if (!texto) return "";
-
   let resultado = "";
   let contador = 1;
 
