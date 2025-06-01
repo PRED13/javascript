@@ -14,6 +14,5 @@ function runLengthEncode(texto) {
 
   return resultado;
 }
-
 // Prueba
 console.log(runLengthEncode("aaabbcdddd")); // "a3b2c1d4"
